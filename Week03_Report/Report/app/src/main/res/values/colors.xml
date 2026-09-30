@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--기본 보라색 설정 -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- 상단바 녹색/청록색 테마 -->
+    <color name="primary">#008577</color>
+    <color name="primary_dark">#00574B</color>
+    <!-- 포커스 시 밑줄 및 커서 붉은색(분홍색 계열) -->
+    <color name="accent_red">#D81B60</color>
+</resources>
