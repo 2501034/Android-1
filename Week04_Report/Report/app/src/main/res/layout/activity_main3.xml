@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 섭씨온도 입력 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvCelsiusLabel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="섭씨온도(0.0 ℃ )"
+            android:textColor="#555555"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/seekBarCelsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="200"
+            android:progress="0"
+            android:progressTint="#E91E63"
+            android:thumbTint="#E91E63" />
+    </LinearLayout>
+
+    <!-- 화씨온도 입력 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvFahrenheitLabel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="화씨온도(0.0 ℉)"
+            android:textColor="#555555"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/seekBarFahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="400"
+            android:progress="0"
+            android:progressTint="#E91E63"
+            android:thumbTint="#E91E63" />
+    </LinearLayout>
+
+    <!-- 라디오 버튼 & 버튼 조작 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rbCtoF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#E91E63"
+                android:text="섭씨를 화씨로"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbFtoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#E91E63"
+                android:text="화씨를 섭씨로"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#CCCCCC"
+            android:text="변환"
+            android:textColor="#333333" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CCCCCC"
+            android:text="초기화"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <!-- 결과 표시 텍스트뷰 -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#555555"
+        android:textSize="18sp" />
+
+</LinearLayout>

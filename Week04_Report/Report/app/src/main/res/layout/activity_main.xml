@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 첫 번째 자연수 입력 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNum1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="자연수 입력(1)"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="99"
+            android:progress="0"
+            android:progressTint="#00E5FF"
+            android:thumbTint="#00E5FF" />
+    </LinearLayout>
+
+    <!-- 두 번째 자연수 입력 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvNum2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="자연수 입력(1)"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="99"
+            android:progress="0"
+            android:progressTint="#00E5FF"
+            android:thumbTint="#00E5FF"/>
+    </LinearLayout>
+
+    <!-- 계산 버튼 -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EE"
+        android:text="최소공배수 구하기"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 결과 표시 텍스트뷰 -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="4dp"
+        android:text="결과"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+</LinearLayout>
