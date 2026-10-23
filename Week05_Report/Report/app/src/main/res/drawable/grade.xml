@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 모자 두건 (아래쪽) -->
+    <path
+        android:fillColor="#34495E"
+        android:pathData="M6,10.5v5c0,2.5 12,2.5 12,0v-5" />
+
+    <!-- 모자 윗판 (사각형) -->
+    <path
+        android:fillColor="#2C3E50"
+        android:pathData="M12,3 L22,8 L12,13 L2,8 Z" />
+
+    <!-- 수술 줄 -->
+    <path
+        android:strokeColor="#F1C40F"
+        android:strokeWidth="0.8"
+        android:pathData="M12,8 Q18,9 19,13" />
+
+    <!-- 수술 매듭 및 술 장식 -->
+    <path
+        android:fillColor="#F1C40F"
+        android:pathData="M12,8m-0.8,0a0.8,0.8 0,1 1,1.6 0a0.8,0.8 0,1 1,-1.6 0 M18,13h2l-0.5,5h-1z" />
+
+</vector>

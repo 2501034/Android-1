@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E0E0E0"
+        android:text="알림 다이얼로그"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnInputDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E0E0E0"
+        android:text="입력 다이얼로그"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnListDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0E0E0"
+        android:text="리스트 다이얼로그"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+</LinearLayout>
