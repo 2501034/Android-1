@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 색상을 선택해주세요"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Red SeekBar -->
+    <TextView
+        android:id="@+id/tvRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Red : 0(00)"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/sbRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255" />
+
+    <!-- Green SeekBar -->
+    <TextView
+        android:id="@+id/tvGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Green : 0(00)"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/sbGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255" />
+
+    <!-- Blue SeekBar -->
+    <TextView
+        android:id="@+id/tvBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Blue : 0(00)"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/sbBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255" />
+
+    <!-- 실시간 미리보기 버튼 -->
+    <Button
+        android:id="@+id/btnPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="변경 색상" />
+
+</LinearLayout>

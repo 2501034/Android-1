@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 톱니바퀴 아이콘 (긴 누름/마우스 호버 시 "버튼 설정" 툴팁 노출) -->
+    <item
+        android:id="@+id/menu_button_setting"
+        android:icon="@drawable/color"
+        android:title="버튼 설정"
+        app:showAsAction="always" />
+
+    <!-- 더보기(점 3개) 라디오 아이템 그룹 -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_bg_set"
+            android:checked="true"
+            android:title="배경 이미지 설정" />
+        <item
+            android:id="@+id/menu_bg_remove"
+            android:title="배경 이미지 삭제" />
+    </group>
+
+</menu>
