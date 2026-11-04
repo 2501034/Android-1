@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/logo"
+        app:showAsAction="ifRoom"
+        android:title="Action Bar 배경색 변경"/>
+
+    <item android:title="EditText 글자 크기 선택">
+    <menu>
+        <group
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/size1"
+                android:title="글자 크게"/>
+            <item
+                android:id="@+id/size2"
+                android:title="글자 작게"/>
+            <item
+                android:id="@+id/size3"
+                android:title="정상 크기"
+                android:checked="true"/>
+        </group>
+    </menu>
+    </item>
+
+</menu>
