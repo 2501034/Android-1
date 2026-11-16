@@ -30,11 +30,13 @@ public class CustomFragment extends Fragment {
         FragmentManager manager =getChildFragmentManager();
         CustomViewAdapter adapter = new CustomViewAdapter(manager);
         viewPager.setAdapter(adapter);
+        viewPager.setOffscreenPageLimit(2);
+
         TabLayout tabLayout = view.findViewById(R.id.tabLayout);
         tabLayout.setBackgroundColor(ContextCompat.getColor(requireContext(),R.color.background2));
         tabLayout.setTabTextColors(ContextCompat.getColor(requireContext(),R.color.unselected_text),
                 ContextCompat.getColor(requireContext(), R.color.selected_text));
-        tabLayout.setSelectedTabIndicator(ContextCompat.getColor(requireContext(),R.color.indicator));
+        tabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(requireContext(),R.color.indicator));
         tabLayout.setSelectedTabIndicatorHeight(10);
         tabLayout.setupWithViewPager(viewPager);
     }
