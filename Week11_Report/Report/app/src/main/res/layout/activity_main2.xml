@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0044EE"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="BroadCasting 예제\n실행 전에 Receiver부터 실행하세요"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#6200EE"
+        android:text="동적 BROADCASTING"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#6200EE"
+        android:text="정적 BROADCASTING"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
